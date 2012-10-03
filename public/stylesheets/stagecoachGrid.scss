@@ -1,0 +1,76 @@
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+$baseCol: 100px;
+$gutterWidth: 54.54545454545454545454px;
+$container: 1800px;
+
+@mixin width($cols: 1){
+	@if($cols == 1){
+		width: percentage(((($cols * $baseCol))/ $container));
+	} @else {
+		width: percentage(((($cols * $baseCol) + (($cols - 1) * $gutterWidth))/ $container));	
+	}
+	margin-right: percentage(($gutterWidth)/ $container);
+}
+
+@mixin offset($cols: 1){
+	margin-left: percentage(((($cols * $baseCol) + (($cols - 1) * $gutterWidth) + ($gutterWidth))/ $container));	
+}
+
+@for $i from 1 through 11{
+	.col#{$i}{
+		@include width($i);
+	}
+}
+
+.col12{
+	@include width(12);
+	margin-right: 0;
+}
+
+@for $i from 1 through 11{
+	.offset#{$i}{
+		@include offset($i);
+	}
+}
+
+.container{
+	text-align: center;
+	margin: 1em auto;
+	width: 97%;
+}
+
+.row{
+	@extend .clearfix;
+	width: 100%;
+	text-align: center;
+	margin: 1em auto;
+	.col{
+		display: inline-block;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+.lone{
+	display: block;
+	margin-right: 0;
+}
+
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+}

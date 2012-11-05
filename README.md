@@ -17,6 +17,14 @@ a tool to create a rugged crew of html/css components equipped to navigate and t
 
 ## Install ##
 
+1. Install node from http://nodejs.org/
+2. Clone or download stagecoach
+3. `cd stagecoach`
+4. `npm install express`
+5. `npm install jade`
+6. `node app.js`
+
+Stagecoach should now be running on port 3000
 
 ## To-Do ##
 1. Issues

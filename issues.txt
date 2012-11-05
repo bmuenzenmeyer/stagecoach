@@ -1,0 +1,40 @@
+X new line support
+X editor styling
+X duplicate item detection
+X cannot add null item name
+X export all to style guide (output only?)
+X delete deletes files after confirmation
+X id support
+X full screen
+X sort items 
+
+X real-time sort on a visible countdown
+X save on sort change
+save all button/keypress https://github.com/jeresig/jquery.hotkeys
+remove sort on delete
+error on realtime sort/post
+X do not save order if exists....!
+JSON results
+per editor/item timers
+better stagecoach styling, graphics, dogfood
+X figure out keydown bug
+
+mit license
+npm?
+github
+ clean up for release, remove consoles
+ min, concat if necessary
+ gh pages rwd
+ rename app.js to stagecoach.js, stagecoach.js to outfitter.js
+
+presentation
+jmpress for slides running off iis
+jade the grid.jade file to use loops
+knockout mapping plugin
+sample site
+  eat my dogfood
+  explain visually
+  video, images
+  picture fille
+  
+  tons of resources....

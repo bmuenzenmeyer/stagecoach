@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title>Stagecoach</title>
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="lib/respond.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/prettify.min.css">
+        <link rel="stylesheet" href="css/site.css">
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+        <div class="container">
+            <section class="row homeRow">
+                <header id="home" class="row col12">
+                    <h1 class="col col3">Stagecoach</h1>
+                    <div id="menu"></div>
+                    <nav role="navigation" class="col col9" id="nav" class="navbar">
+                        <a href="#grid" class=""><span>Grid</span></a>
+                        <a href="#offset" class=""><span>Offset</span></a>
+                        <a href="#nested" class=""><span>Nested</span></a>
+                        <a href="#plugins" class=""><span>Plugins</span></a>
+                        <a href="#workflow" class=""><span>Workflow</span></a>
+                        <a href="#download" class=""><span>Download</span></a>
+                    </nav>
+                </header>
+            </section>
+
+            <h3 id="howdy">Howdy</h3>
+
+            <h3 id="grid">Grid</h3>
+
+            <section class="row">
+                <div class="col col12 bar">12</div>
+            </section>
+            <section class="row">
+                <div class="col col1 bar">1</div><div class="col col11 bar">11</div>
+            </section>
+            <section class="row">
+                <div class="col col2 bar">2</div><div class="col col10 bar">10</div>
+            </section>
+            <section class="row">
+                <div class="col col3 bar">3</div><div class="col col9 bar">9</div>
+            </section>
+            <section class="row">
+                <div class="col col4 bar">4</div><div class="col col8 bar">8</div>
+            </section>
+            <section class="row">
+                <div class="col col4 bar">4</div><div class="col col8 bar">8</div>
+            </section>
+            <section class="row">
+                <div class="col col5 bar">5</div><div class="col col7 bar">7</div>
+            </section>
+            <section class="row">
+                <div class="col col6 bar">6</div><div class="col col6 bar">6</div>
+            </section>
+            <section class="row">
+                <div class="col col3 bar">3</div><div class="col col3 bar">3</div><div class="col col3 bar">3</div><div class="col col3 bar">3</div>
+            </section>
+            <section class="row">
+                <div class="col col4 bar">4</div><div class="col col4 bar">4</div><div class="col col4 bar">4</div>
+            </section>
+            <section class="row">
+                <div class="col col2 bar">2</div><div class="col col2 bar">2</div><div class="col col2 bar">2</div><div class="col col2 bar">2</div><div class="col col2 bar">2</div><div class="col col2 bar">2</div>
+            </section>
+            <section class="row">
+                <div class="col col1 bar">1</div><div class="col col1 bar">1</div><div class="col col1 bar">1</div><div class="col col1 bar">1</div><div class="col col1 bar">1</div><div class="col col1 bar">1</div><div class="col col1 bar">1</div><div class="col col1 bar">1</div><div class="col col1 bar">1</div><div class="col col1 bar">1</div><div class="col col1 bar">1</div><div class="col col1 bar">1</div>
+            </section>    
+
+            <section class="row">
+                <hr class="col col8"/>
+            </section>
+
+            <h3 id="nested">Offsetting</h3>
+
+            <section class="row">
+                <div class="col col6 bar">6</div><div class="col col3 bar offset3">3 off 3</div>
+            </section>    
+
+            <section class="row">
+                <div class="col col2 bar offset4">2 off 4</div><div class="col col3 bar offset3">3 off 3</div>
+            </section>  
+
+            <section class="row">
+                <div class="col col4 bar">4</div><div class="col col6 offset2 bar">6 off 2</div>
+            </section>  
+
+            <section class="row">
+                <div class="col col2 bar offset1">2 off 1</div><div class="col col9 bar">9</div>
+            </section>    
+
+            <section class="row">
+                <div class="col col1 bar offset1">1 off 1</div><div class="col col1 bar offset1">1 off 1</div><div class="col col1 bar offset1">1 off 1</div><div class="col col1 bar offset1">1 off 1</div><div class="col col1 bar offset1">1 off 1</div><div class="col col1 bar offset1">1 off 1</div>
+            </section>
+
+            <section class="row">
+                <hr class="col col8"/>
+            </section>
+
+            <h3 id="nested" class="collapsed" data-toggle="collapse" data-target="#nestingExplained">Nesting</h3>
+            <p id="nestingExplained" class="collapse">Test<span class="note">Remember!</span>Relative to conainer</p>
+
+            <section class="row">
+                <div class="col col6">
+                    <section class="row">
+                        <div class="col col12 bar nested">n12</div>
+                    </section>
+                </div><div class="col col6 bar">6</div>
+            </section>
+
+            <section class="row">
+                <div class="col col6">
+                    <section class="row">
+                        <div class="col col6 bar nested">n6</div><div class="col col6 bar nested">n6</div>
+                    </section>
+                </div><div class="col col6 bar">6</div>
+            </section>
+
+            <section class="row">
+                <div class="col col6">
+                    <section class="row">
+                        <div class="col col4 bar nested">n4</div><div class="col col4 bar nested">n4</div><div class="col col4 bar nested">n4</div>
+                    </section>
+                </div><div class="col col6 bar">6</div>
+            </section>
+
+            <section class="row">
+                <div class="col col6">
+                    <section class="row">
+                        <div class="col col1 bar nested">n1</div><div class="col col1 bar nested">n1</div><div class="col col1 bar nested">n1</div><div class="col col1 bar nested">n1</div><div class="col col1 bar nested">n1</div><div class="col col1 bar nested">n1</div><div class="col col1 bar nested">n1</div><div class="col col1 bar nested">n1</div><div class="col col1 bar nested">n1</div><div class="col col1 bar nested">n1</div><div class="col col1 bar nested">n1</div><div class="col col1 bar nested">n1</div>
+                    </section>
+                </div><div class="col col6 bar">6</div>
+            </section>
+
+            <section class="row">
+                <hr class="col col8"/>
+            </section>
+
+            <h3 id="plugins">Plugins</h3>
+            <section class="row">
+                <div class="col col8 plugins">
+                    <h4>Home Grown</h4>
+                    <h5>gnat.js</h5>
+                    <div class="gnat" data-gnat-options='{"className":"alert", "timeout" : 2000}'></div>
+                    <div class="gnat"></div>
+                    <div id="gnatTest">Launch Demo</div>
+
+                    <h5>fill.js</h5>
+                    Basic Usage: will fill to parent
+                    <pre class="prettyprint">$('.selector').fill();</pre>
+                    This will fill to selector's size:
+                    <pre class="prettyprint">$('.selector').fill({parent: $(ele)});</pre>
+                    To  ignore width:
+                    <pre class="prettyprint">$('.selector').fill({x: false});</pre>
+                    To ignore height:
+                    <pre class="prettyprint">$('.selector').fill({y: false});</pre>
+                    Center on window:
+                    <pre class="prettyprint">$('#selector').fill({center: true});</pre>
+                    Demo:
+                    <div class="fillContainer col12">
+                        <div class="fillTest">$('.fillTest').fill();</div>
+                    </div>
+                    <br />
+                    Full Screen Demo: TBD
+                    <h4>Curated</h4>
+                </div>
+            </section>
+
+            <section class="row">
+                <hr class="col col8"/>
+            </section>
+
+            <h3 id="workflow">Workflow</h3>
+            <section class="row">
+                - Design 
+                    - SneakPeekIt Mockups
+                - Bolierplate
+                    - normalize.min.css
+                    - stagecoach.min.css
+                    - yepnope.js
+                    - respond.js
+                    - HTML5 shiv
+                    - jQuery CDN w/ local fallback
+                - Progressive Enhancement
+                    -
+                - Deploy
+                    - grunt.js
+                - Testing
+                    - Responsive Roulette
+            </section>
+
+
+
+            <!--
+
+                stagecoach as a resource loader
+
+                better alert
+                
+                require.js explanation
+                fitvid.js wrap
+                fittext.js wrap
+                picturefill wrap
+                ajax include wrap
+                append around wrap
+                aspect - ratio stuff
+                media css
+                other southstreet items? 
+             -->
+
+
+            <section class="row">
+                <hr class="col col8"/>
+            </section>
+
+            <h3 id="download">Download</h3>
+            Download
+            <footer>
+            <small>Because the wilderness must be tamed.  <a href="https://twitter.com/bmuenzenmeyer">@bmuenzenmeyer</a></small></footer>
+        </div>
+        <script src="lib/yepnope.1.5.4-min.js"></script>
+        <script>
+            yepnope([{
+                    load: 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
+                    complete: function () {
+                        if (!window.jQuery){
+                            yepnope('lib/jquery-1.7.1.min.js');
+                        }
+                    }
+               }, {
+                load: ['lib/bootstrap-collapse.js', 'lib/bootstrap-scrollspy.js', 'js/fill.js', 'js/gnat.js', 'lib/prettify.js', 'js/stagecoach.js'],
+                complete: function (){
+                    jQuery(function(){
+                        Stagecoach.init();
+                        prettyPrint();
+                    });
+                }
+            }]);
+        </script>
+        <script>
+        //Google Analytics
+        </script>
+    </body>
+</html>

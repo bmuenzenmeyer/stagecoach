@@ -1,0 +1,137 @@
+extends layout
+
+block append head
+  link(rel='stylesheet', href='/stylesheets/grid.css')
+
+block content
+  h3#grid Grid
+  section.row
+    .col.col12.bar 12
+  section.row
+    .col.col1.bar 1
+    .col.col11.bar 11
+  section.row
+    .col.col2.bar 2
+    .col.col10.bar 10
+  section.row
+    .col.col3.bar 3
+    .col.col9.bar 9
+  section.row
+    .col.col4.bar 4
+    .col.col8.bar 8
+  section.row
+    .col.col5.bar 5
+    .col.col7.bar 7
+  section.row
+    .col.col6.bar 6
+    .col.col6.bar 6
+  section.row
+    .col.col3.bar 3
+    .col.col3.bar 3
+    .col.col3.bar 3
+    .col.col3.bar 3
+  section.row
+    .col.col4.bar 4
+    .col.col4.bar 4
+    .col.col4.bar 4
+  section.row
+    .col.col2.bar 2
+    .col.col2.bar 2
+    .col.col2.bar 2
+    .col.col2.bar 2
+    .col.col2.bar 2
+    .col.col2.bar 2
+  section.row
+    .col.col1.bar 1
+    .col.col1.bar 1
+    .col.col1.bar 1
+    .col.col1.bar 1
+    .col.col1.bar 1
+    .col.col1.bar 1
+    .col.col1.bar 1
+    .col.col1.bar 1
+    .col.col1.bar 1
+    .col.col1.bar 1
+    .col.col1.bar 1
+    .col.col1.bar 1
+  section.row
+    hr.col.col8
+  h3#nested Offsetting
+  section.row
+    .col.col6.bar 6
+    .col.col3.bar.offset3 3 off 3
+  section.row
+    .col.col2.bar.offset4 2 off 4
+    .col.col3.bar.offset3 3 off 3
+  section.row
+    .col.col4.bar 4
+    .col.col6.offset2.bar 6 off 2
+  section.row
+    .col.col2.bar.offset1 2 off 1
+    .col.col9.bar 9
+  section.row
+    .col.col1.bar.offset1 1 off 1
+    .col.col1.bar.offset1 1 off 1
+    .col.col1.bar.offset1 1 off 1
+    .col.col1.bar.offset1 1 off 1
+    .col.col1.bar.offset1 1 off 1
+    .col.col1.bar.offset1 1 off 1
+  section.row
+    hr.col.col8
+  h3#nested Nesting
+  section.row
+    .col.col6
+      section.row
+        .col.col12.bar.nested n12
+    .col.col6.bar 6
+  section.row
+    .col.col6
+      section.row
+        .col.col6.bar.nested n6
+        .col.col6.bar.nested n6
+    .col.col6.bar 6
+  section.row
+    .col.col6
+      section.row
+        .col.col4.bar.nested n4
+        .col.col4.bar.nested n4
+        .col.col4.bar.nested n4
+    .col.col6.bar 6
+  section.row
+    .col.col6
+      section.row
+        .col.col1.bar.nested n1
+        .col.col1.bar.nested n1
+        .col.col1.bar.nested n1
+        .col.col1.bar.nested n1
+        .col.col1.bar.nested n1
+        .col.col1.bar.nested n1
+        .col.col1.bar.nested n1
+        .col.col1.bar.nested n1
+        .col.col1.bar.nested n1
+        .col.col1.bar.nested n1
+        .col.col1.bar.nested n1
+        .col.col1.bar.nested n1
+    .col.col6.bar 6
+  footer
+
+script(src='lib/yepnope.1.5.4-min.js')
+script
+  yepnope([{
+  load: 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
+  complete: function () {
+  if (!window.jQuery){
+  yepnope('lib/jquery-1.7.1.min.js');
+  }
+  }
+  }, {
+  load: ['lib/bootstrap-collapse.js', 'lib/bootstrap-scrollspy.js', 'js/fill.js', 'js/gnat.js', 'lib/prettify.js', 'js/stagecoach.js'],
+  complete: function (){
+  jQuery(function(){
+  Stagecoach.init();
+  prettyPrint();
+  });
+  }
+  }]);
+script
+  //Google Analytics

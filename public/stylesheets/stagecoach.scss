@@ -1,0 +1,62 @@
+@import "normalize.min.css";
+@import "stagecoachConstants.scss";
+
+$editorHeight: 200px;
+
+.itemName{
+	font-size: 1.5em;	
+}
+.btn{
+	border: 1px solid $stagecoachOrange;
+	padding: 5px;
+	font-size: 1em;
+	color: black;
+	&:hover{
+		background-color: $stagecoachOrange;
+		color: black;
+		border: 1px solid black;
+		cursor: pointer;
+		text-decoration: none;
+	}
+}
+.add{
+	display: inline;
+	margin-left: 1em;
+	&.disabled{
+		background-color: white;
+		border-color: $stagecoachOrange;
+		cursor: default;
+	}
+}
+.item{
+	margin-bottom: 2em;
+	div{
+		line-height: 2.5em;
+	}
+	.action{
+		margin-left: .5em;
+	}
+}
+input{
+	margin-right: .5em;
+	&.iSort{
+		width: 3em;
+	}
+}
+textarea{
+	width: 25%;
+	height: $editorHeight;
+}
+iframe {
+	width: 45%;
+	height: $editorHeight;
+}
+@media screen and (max-width: 1000px){
+	textarea{
+		width: 45%;
+	}
+	iframe{
+		margin-top: 5px;
+		width: 92%;
+	}
+}

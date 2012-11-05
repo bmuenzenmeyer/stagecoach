@@ -1,0 +1,14 @@
+extends layout
+
+block append head
+	link(rel='stylesheet', href='/stylesheets/stagecoach.css')
+	script(src='/javascripts/knockout-2.1.0.js')
+	script(src='/javascripts/knockout.mapping.js')
+
+block content
+	.container
+	script(src='/javascripts/calvary.js')
+	script
+		$(function(){
+			Calvary.charge('!{items}');
+		});

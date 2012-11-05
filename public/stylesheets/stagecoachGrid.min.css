@@ -1,8 +1,9 @@
 .clearfix,.row{*zoom:1}.clearfix:before,.row:before,.clearfix:after,.row:after{display:table;content:""}.clearfix:after,.row:after{clear:both}
-.col1{width:5.556%;margin-right:3.03%}.col2{width:14.141%;margin-right:3.03%}.col3{width:22.727%;margin-right:3.03%}.col4{width:31.313%;margin-right:3.03%}
-.col5{width:39.899%;margin-right:3.03%}.col6{width:48.485%;margin-right:3.03%}.col7{width:57.071%;margin-right:3.03%}.col8{width:65.657%;margin-right:3.03%}
-.col9{width:74.242%;margin-right:3.03%}.col10{width:82.828%;margin-right:3.03%}.col11{width:91.414%;margin-right:3.03%}.col12{width:100%;margin-right:3.03%;margin-right:0}
-.offset1{margin-left:8.586%}.offset2{margin-left:17.172%}.offset3{margin-left:25.758%}.offset4{margin-left:34.343%}.offset5{margin-left:42.929%}.offset6{margin-left:51.515%}
-.offset7{margin-left:60.101%}.offset8{margin-left:68.687%}.offset9{margin-left:77.273%}.offset10{margin-left:85.859%}.offset11{margin-left:94.444%}.container{text-align:center;margin:1em auto;width:97%}
-.row{width:100%;text-align:center;margin:1em auto}.row .col{display:inline-block}.row .col:last-child{margin-right:0}.lone{display:block;margin-right:0}
-img,embed,object,video{max-width:100%}
+.col1{width:5.555555556%;margin-right:3.03030303%}.col2{width:14.141414141%;margin-right:3.03030303%}.col3{width:22.727272727%;margin-right:3.03030303%}
+.col4{width:31.313131313%;margin-right:3.03030303%}.col5{width:39.898989899%;margin-right:3.03030303%}.col6{width:48.484848485%;margin-right:3.03030303%}
+.col7{width:57.070707071%;margin-right:3.03030303%}.col8{width:65.656565657%;margin-right:3.03030303%}.col9{width:74.242424242%;margin-right:3.03030303%}
+.col10{width:82.828282828%;margin-right:3.03030303%}.col11{width:91.414141414%;margin-right:3.03030303%}.col12{width:100%;margin-right:3.03030303%;margin-right:0}
+.offset1{margin-left:8.585858586%}.offset2{margin-left:17.171717172%}.offset3{margin-left:25.757575758%}.offset4{margin-left:34.343434343%}.offset5{margin-left:42.929292929%}
+.offset6{margin-left:51.515151515%}.offset7{margin-left:60.101010101%}.offset8{margin-left:68.686868687%}.offset9{margin-left:77.272727273%}.offset10{margin-left:85.858585859%}
+.offset11{margin-left:94.444444444%}.container{text-align:center;margin:1em auto;width:97%}.row{width:100%;text-align:center;margin:1em auto}.row .col{display:inline-block}
+.row .col:last-child{margin-right:0}.lone{display:block;margin-right:0}img,embed,object,video{max-width:100%}

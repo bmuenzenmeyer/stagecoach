@@ -1,0 +1,24 @@
+extends layout
+
+block append head
+	link(rel='stylesheet', href='/stylesheets/stagecoach.css')
+	script(src='/javascripts/knockout-2.1.0.js')
+	script(src='/javascripts/knockout.mapping.js')
+
+block content
+	.container
+		| <!-- ko foreach: items-->
+		|	<div class="item"><div><span class="itemName" data-bind="text: $data.name"></span> <input type="text" class="action iSort" data-bind="value: $data.order, valueUpdate: 'afterkeydown'" placeholder="sort #"/><a data-bind="attr:{href: '/full?name=' + $data.name()}" class="full btn action">Full Screen</a><span class="delete btn action">Delete</span></div>
+		|	<textarea placeholder="html" class="iHtml" data-bind="value: $data.html, valueUpdate: 'afterkeydown'" wrap="off"></textarea>
+		|	<textarea placeholder="css" class="iCss" data-bind="value: $data.css, valueUpdate: 'afterkeydown'" wrap="off"></textarea>
+		|	<iframe class='iOut'></iframe>
+		|	</div>
+		| <!-- /ko -->
+		input(type='text', placeholder='name').name 
+		input(type='text', placeholder='sort #').sortOrder
+		div.add.btn.disabled Add Item
+	script(src='/javascripts/stagecoach.js')
+	script
+		$(function(){
+			Stagecoach.embark('!{items}');
+		});

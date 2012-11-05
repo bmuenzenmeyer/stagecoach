@@ -1,0 +1,72 @@
+/* line 8, stagecoachConstants.scss */
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* line 12, stagecoachConstants.scss */
+a {
+  color: #0a5fc7;
+  font-size: .5em;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+/* line 19, stagecoachConstants.scss */
+header {
+  background-color: tan;
+  -moz-box-shadow: 0 4px 4px -2px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 0 4px 4px -2px rgba(50, 50, 50, 0.75);
+  box-shadow: 0 4px 4px -2px rgba(50, 50, 50, 0.75);
+  width: 100%;
+  vertical-align: middle;
+  border-top: 4px solid #0a5fc7;
+}
+/* line 28, stagecoachConstants.scss */
+header a {
+  display: inline-block;
+  font-size: 1.5em;
+  height: 72px;
+  width: 10%;
+  vertical-align: middle;
+  line-height: 72px;
+  text-align: center;
+}
+/* line 36, stagecoachConstants.scss */
+header a.home {
+  color: #c74309;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #612005;
+  font-size: 56px;
+  margin-left: .5em;
+  text-transform: uppercase;
+  font-family: Impact, "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+/* line 45, stagecoachConstants.scss */
+header a:nth-child(2) {
+  margin-left: 10em;
+}
+/* line 48, stagecoachConstants.scss */
+header a:hover:not(.home) {
+  background-color: #d3a05f;
+}
+/* line 52, stagecoachConstants.scss */
+header small {
+  font-size: 1em;
+  color: #612005;
+  text-shadow: none;
+  width: 15%;
+}
+/* line 57, stagecoachConstants.scss */
+header small a {
+  font-size: .75em;
+  text-decoration: none;
+}
+/* line 60, stagecoachConstants.scss */
+header small a:hover {
+  color: #c74309;
+}
+
+/* line 67, stagecoachConstants.scss */
+.container {
+  padding: 0 5px;
+}

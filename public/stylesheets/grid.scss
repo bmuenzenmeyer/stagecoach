@@ -1,0 +1,76 @@
+@import "normalize.min.css";
+@import "stagecoachConstants.scss";
+@import "stagecoachGrid.scss";
+
+.bar{
+	background: $stagecoachOrange;
+	height: 2em;
+	margin-bottom: 3em;
+	color: white;
+	line-height: 2em;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.nested{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+h3{
+	text-align: center;
+}
+
+hr{
+	margin-top: 10em;
+}
+
+#grid{
+	margin-top: 3em;
+}
+
+/*
+@media all and (max-width: 320px){
+	@for $i from 1 through 11{
+		.col#{$i}{
+			@include width(12);
+			margin-right: 0;
+		}
+	}
+}
+*/
+
+.collapse{
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: height 0.35s ease;
+	-moz-transition: height 0.35s ease;
+	-o-transition: height 0.35s ease;
+	transition: height 0.35s ease;
+	&.in{
+		height: auto;
+	}
+}
+
+.plugins{
+	text-align: left;
+}
+
+.fillContainer{
+	border: 1px solid black;
+	height: 8em;
+}
+
+.fillTest{
+	width: 10em;
+	background: black;
+	color: white;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#gnatTest{
+	width: 8em;
+	height: 4em;
+}
